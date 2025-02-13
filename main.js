@@ -50,7 +50,7 @@ if (choice === '1') {  //1a
             } else { //3a2
                 console.log("Tu arrives dans un monde préhistorique rempli de danger! Mais avec des Femmes/Hommes sublimes.");
 
-                choice = prompt("Que fais-tu? (1: Rester et profiter / 2: Prendre la porte de retour) ");
+                choice = prompt("Que fais-tu? (1: Rester et profiter malgrés un confort quasi inexistant / 2: Prendre la porte de retour) ");
 
                 while (choice !== '1' && choice !== "2") {
                     choice = prompt('Choisis entre 1 et 2: ');
@@ -106,7 +106,7 @@ if (choice === '1') {  //1a
         }
 
     } else { //2b
-        console.log("Tu continues et traces ta route.");
+        console.log("Tu marches plusieurs jours, tu as soif, tu as faim. Tu trouves une grotte et vit en hermitte toute ta vie. Tu es tranquille et fais ce que tu veux.");
     }
 
 } else { //1b
@@ -195,12 +195,45 @@ if (choice === '1') {  //1a
                         console.log("Le bucheron monte avec son frère dans la voiture. Ils te poursuivent la hache entre les dents! Tu pédales comme un fou! Ils accélèrent, te percutent en t'envoient en l'air! Tu montes très haut et retombe! Soudain tu te réveilles en sursaut. Tu es dans ton lit!");
                     }
                 }
-            } else { //3b
-                console.log("Tu rampes rapidement dans le tunnel à quatres pattes et te trouves nez à nez avec un bête féroce.");
+            } 
+            else { //3b
+                console.log("Tu rampes dans un petit tunnel très étroit. Heureusement que tu n'es pas claustrophobe!! Enfin la grotte s'élargit. Tu te trouves devant 2 portes.");
+                choice = prompt('Que fais-tu? (1: Prendre la porte de droite / 2: Prendre la porte de gauche) ');
+
+                while (choice !== '1' && choice !== "2") {
+                    choice = prompt('Choisis entre 1 et 2: ');
+                }
+        
+                if (choice === '1') { //3a
+                    console.log("Tu arrives au village des licornes. C'est coloré, paisible et tu sens bien. Le seul problème c'est que chaques fois que tu fléchis les genoux tu prends une décharge de 300 volts dans le bas du dos. Tu deviens donc le robot d'Elon Musk!");
+                } else { //3b
+                    console.log("Tu rentres dans un village grisâtre d'où tu ne peux plus jamais sortir. Tout le monde est triste et pleure tout le temps.");
+                }
             }
 
         } else { //2b2
-            console.log("Le bûcheron te transforme en champignon vénéneux.");
+            console.log("Tu es horrible et méconnaissable (enfin tu as toujours été moche, il faut l'avouer! Tu continues d'avancer et vois 2 villages devant toi");
+            choice = prompt('Que fais-tu? (1: Se diriger vers le village de droite / 2: Aller tout droit dans le grand royaume) ');
+
+            while (choice !== '1' && choice !== "2") {
+                choice = prompt('Choisis entre 1 et 2: ');
+            }
+            if (choice === '1') { //3a
+                console.log("Tu arrives dans un petit village où tout le monde est très gentil. Tu vis paisiblement. Le chef tu village t'obliges à épouser sa fille. Elle est magnifique. c'est la belle et toi la bête!!");
+            } else { //3b
+                console.log("Tu arrives dans un rayome somptueux. Tout le monde te rejette. Tu rencontres un mage qui te propose un sort");
+                choice = prompt('Que fais-tu? (1: Tu peux te faire aimer à chaques fois que tu touches la personne / 2:Tu deviens extrêment riche)');
+
+                while (choice !== '1' && choice !== "2") {
+                    choice = prompt('Choisis entre 1 et 2: ');
+                }
+        
+                if (choice === '1') { //3a
+                    console.log("Tout le monde t'aime mais il y a un mais, tu t'aimes trop et du coup tu es jaloux et ne supporte plus personne... Game over");
+                } else { //3b
+                    console.log("Très bon choix! Même si t'es vraiment moche, comme tu es super riche tu as tout ce que tu veux! Sauf le véritable amour. Mais pas grave t'es riche... ");
+                }
+            }
         }
     }
 }
